@@ -14,8 +14,8 @@ const postClips = asyncHandler(async (req, res) => {
     });
     res.status(201).json(clip);
   } else {
-    res.status(400)
-    throw new Error('Clip already exists');
+    res.status(400);
+    throw new Error("Clip already exists");
   }
 });
 
