@@ -55,9 +55,9 @@ body {
 }
 
 .instructions {
-    padding: 20px;
-    padding-top: 0;
-    font-size: 18px;
+  padding: 20px;
+  padding-top: 0;
+  font-size: 18px;
 }
 .home-content-link {
   width: 20%;
@@ -97,5 +97,3 @@ body {
 .home-content-link input[type="submit"]:hover {
   background-color: #555;
 }
-
-  
