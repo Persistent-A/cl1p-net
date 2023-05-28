@@ -34,7 +34,8 @@ const Home = () => {
               </p>{" "}
               <p>4. Have a nice day. </p>
             </div>
-            <p>You can also create and view cl1ips via the API.</p><br/>
+            <p>You can also create and view cl1ips via the API.</p>
+            <br />
             <p>
               The cl1ip is destroyed as soon as it is read after the selected
               destroy time.
