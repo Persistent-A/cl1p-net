@@ -46,11 +46,13 @@ const ClipPanel = () => {
   };
 
   const handleCopyClick = () => {
+    // Copy cl1p content to clipboard
     navigator.clipboard.writeText(content);
   };
 
   const calculateRemainingTime = () => {
     if (!clipExpire) return 0;
+    // Calculate remaining time until cl1p expiration
     const remainingTime = clipExpire.getTime() - Date.now();
     const remainingMinutes = Math.ceil(remainingTime / 60000);
     return remainingMinutes;
@@ -81,6 +83,7 @@ const ClipPanel = () => {
             </Link>
             <p>
               Here is your stuff. This cl1p will be deleted in{" "}
+              {/* For calculating remaining time */}
               {calculateRemainingTime()} minutes. Thanks for using cl1p. Tell
               your friends! <button onClick={handleCopyClick}>Copy</button>
             </p>

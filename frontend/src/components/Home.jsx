@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/home.css";
+import { useState } from "react"; // Import the useState hook from React
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook from react-router-dom
+import "../styles/home.css"; // Import the CSS styles
 
 const Home = () => {
-  const [inputUrl, setInputUrl] = useState("");
-  const navigate = useNavigate();
+  const [inputUrl, setInputUrl] = useState(""); // Declare and initialize the inputUrl state variable using useState hook
+  const navigate = useNavigate(); // Get the navigate function from the useNavigate hook
 
   const onSubmit = async (e) => {
-    e.preventDefault();
-    navigate(`/${inputUrl}`);
+    e.preventDefault(); // Prevent the default form submission behavior
+    navigate(`/${inputUrl}`); // Navigate to the specified URL path with the value of inputUrl
   };
   return (
     <div className="home">
@@ -43,6 +43,7 @@ const Home = () => {
           </p>
         </div>
         <div className="home-content-link">
+          {/* Form for entering URL */}
           <form onSubmit={onSubmit}>
             <label>cl1ip.net/</label>
             <input
